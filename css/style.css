@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+/* Zerando configurações  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Estilizando o body */
+body {
+  background: #f6f9ff;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #434343;
+}
+
+/* Deixando os cards em linhas (row por padrão do display flex */
+main.cards {
+  display: flex;
+  padding: 32px;
+}
+
+/* Estilizando os cards em si */
+main.cards section.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  max-width: 468px;
+  margin-left: 32px;
+}
+
+/* Tirando a margem da esquerda do primeiro card pras pontas ficarem iguais */
+main.cards section.card:first-child {
+  margin-left: 0;
+}
+
+/* Definindo tamanho do espaço que as imagens vão ocupar */
+main.cards section.card .icon {
+  width: 64px;
+  height: 64px;
+}
+
+/* Fazendo as imagem ocupar 100% do tamanho definido anteriormente */
+main.cards section.card img {
+  width: 100%;
+}
+
+/* Dando espaçamento entre os conteudos de cada card*/
+main.cards section.card h3 {
+  font-size: 100%;
+  margin: 16px 0;
+}
+main.cards section.card span {
+  font-weight: 300;
+  max-width: 240px;
+  font-size: 80%;
+  margin-bottom: 16px;
+}
+
+/* Estilizando botão e deixando redondo nas bordas */
+main.cards section.card button {
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  border-radius: 32px;
+  border: 0;
+  cursor: pointer;
+  font-size: 80%;
+  font-weight: 500;
+  color: white;
+}
+
+/* Fazendo gradiente do botão do primeiro card */
+main.cards section.card.contact button {
+  background: linear-gradient(to right, #9f66ff, #dfcbff);
+}
+
+/* Fazendo gradiente do botão do segundo card */
+main.cards section.card.shop button {
+  background: linear-gradient(to right, #3e8aff, #bbdeff);
+}
+
+/* Fazendo gradiente do botão do terceiro card */
+main.cards section.card.about button {
+  background: linear-gradient(to right, #fe5f8f, #ffc7d9);
+}
+
+/* Fazendo sombra em volta do primeiro card */
+main.cards section.card.contact {
+  box-shadow: 20px 20px 50px -30px #dbc4ff;
+}
+
+/* Fazendo sombra em volta do segundo card */
+main.cards section.card.shop {
+  box-shadow: 20px 20px 50px -30px #afd6ff;
+}
+
+/* Fazendo sombra em volta do terceiro card */
+main.cards section.card.about {
+  box-shadow: 20px 20px 50px -30px #ffc1d5;
+}
+
+/* Responsividade e breakpoints */
+
+@media screen and (max-width: 720px) {
+  /* Deixando os cards em colunas inves de linhas */
+  main.cards {
+    flex-direction: column;
+  }
+
+  /* Tirando a margem na esquerda de todos */
+  main.cards section.card {
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+  /* Tirando margem em baixo do ultimo card para as pontas ficarem iguais */
+  main.cards section.card:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Diminuindo o tamanho do botão */
+  main.cards section.card button {
+    font-size: 70%;
+  }
+}
