@@ -3,7 +3,7 @@
 ## Informações 
 
 * Esse é um projeto feito para treinar minhas habilidades de front-end, com foco no CSS;
-* O projeto é uma pagina web com alguns cards responsivos;
+* O projeto é uma página web com alguns cards responsivos;
 * Os cards possuem efeitos de sombra e gradiente de cores;
 
 ## Conhecimentos utilizados 
